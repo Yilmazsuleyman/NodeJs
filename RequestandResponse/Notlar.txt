@@ -1,0 +1,11 @@
+            Requests - İstekler
+* GET - Url kullanarak sunucudan bilgi alma. İstenilenn bilgiler görünür.
+* Post - Html Formlarını kullanarak sunucuya bilgi göndermek.
+* Put - Tüm bilgileri verdiğiniz bilgiler ile değiştirir.
+* Delete - İstenilen bilgileri siler.
+
+            Response - Tepki
+
+* 200 OK
+* 400 Bad Request
+* 404 Not Found
