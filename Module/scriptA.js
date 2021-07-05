@@ -1,3 +1,4 @@
+//IIFE
 // var controllerA = (function(){
 //     var firstName = "Süleyman";
 
@@ -13,7 +14,7 @@
 
 
 // Yorum satırları açıklama
-// Window üzerinden değişkenlerin birbiriyle çakışmasını engellemek için kullanılan yöntem. Değişkenlere functionlar üzerinden erişerek çakışmaların önüne geçiyoruz.
+// Window üzerinden değişkenlerin birbiriyle çakışmasını engellemek için kullanılan IIFE yöntem. Değişkenlere functionlar üzerinden erişerek çakışmaların önüne geçiyoruz.
 
 
 var age = 26;
