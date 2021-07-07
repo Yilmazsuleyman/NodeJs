@@ -1,0 +1,24 @@
+extends layouts/main-layout.pug
+
+block content 
+    form(action="/admin/add-product" method="POST")
+        .form-group.row
+            label(for="productName").form-label Product Name
+            .col-sm-10
+                input(type="text" name="productName").form-control#productName
+        .form-group.row
+            label(for="price").form-label Price
+            .col-sm-10
+                input(type="text" name="price").form-control#price
+        .form-group.row
+            label(for="image").form-label İmage
+            .col-sm-10
+                input(type="text" name="image").form-control#image
+        .form-group.row
+            label(for="desc").form-label Description
+            .col-sm-10
+                input(type="text" name="desc").form-control#desc
+        
+        .form-group.row.mt-3
+            .col-sm-10
+                input(type="submit" value="Save Product").btn.btn-primary
