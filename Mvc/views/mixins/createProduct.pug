@@ -1,0 +1,11 @@
+mixin createProduct(product)
+  .col-md-4
+              .card(style="width: 18rem;")
+                img(src=`/images/${product.image}` alt=`${product.description}`).card-img-top
+                .card-body
+                  h5.card-title.b
+                    a(href="#") #{product.name}
+                  p.card-text #{product.description}
+                .card-footer
+                  small.text-muted #{product.price} $
+                  a(href="#").btn.btn-primary.float-end Details
