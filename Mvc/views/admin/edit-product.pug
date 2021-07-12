@@ -1,0 +1,35 @@
+extends ../layouts/detail-layout.pug
+
+block content 
+    form(action="/admin/products" method="POST")
+
+        input(type="hidden" name="id" value=`${product.id}`)
+
+
+        .form-group.row
+            label(for="name").form-label Product Name
+            .col-sm-10
+                input(type="text" name="name" value=`${product.name}`).form-control#name
+        .form-group.row
+            label(for="price").form-label Price
+            .col-sm-10
+                input(type="text" name="price" value=`${product.price}`).form-control#price
+        .form-group.row
+            label(for="imageUrl").form-label İmage
+            .col-sm-10
+                input(type="text" name="imageUrl" value=`${product.imageUrl}`).form-control#imageUrl
+        .form-group.row
+            label(for="categoryid").form-label Category
+            .col-sm-10
+                select(name="categoryid").form-control#categoryid
+                    option(value="-1") Select Category 
+                    each category in categories 
+                        option(value=`${category.id}` selected= category.id === product.categoryid) #{category.name}  
+        .form-group.row
+            label(for="desc").form-label Description
+            .col-sm-10
+                textarea#desc(name="desc" cols="30" rows="10" ).form-control #{product.description}
+        
+        .form-group.row.mt-3
+            .col-sm-10
+                input(type="submit" value="Save Product" ).btn.btn-primary

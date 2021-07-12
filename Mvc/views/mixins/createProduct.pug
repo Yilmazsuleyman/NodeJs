@@ -4,8 +4,10 @@ mixin createProduct(product)
                 img(src=`/images/${product.imageUrl}` alt=`${product.description}`).card-img-top
                 .card-body
                   h5.card-title.b
-                    a(href="#") #{product.name}
+                    a(href=`/products/${product.id}`) #{product.name}
                   p.card-text #{product.description}
-                .card-footer
                   small.text-muted #{product.price} $
-                  a(href="#").btn.btn-primary.float-end Details
+                .card-footer
+                  
+                  a(href=`/products/${product.id}`).btn.btn-primary Details
+                  a(href="#").btn.btn-primary.float-end Add to Cart

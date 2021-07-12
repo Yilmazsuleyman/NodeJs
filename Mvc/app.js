@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const adminRoutes = require('./routes/admin');
-const userRoutes = require('./routes/user');
+const userRoutes = require('./routes/shop');
 
 // app.get('/', (req, res)=>{
 //     res.send('Hello World');
